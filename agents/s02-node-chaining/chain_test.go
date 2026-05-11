@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"log"
+	"os"
 	"strings"
 	"testing"
 )
@@ -42,7 +43,7 @@ func TestNextOn_StoresAction(t *testing.T) {
 func TestNextOn_WarnsOnOverwrite(t *testing.T) {
 	var buf bytes.Buffer
 	log.SetOutput(&buf)
-	defer log.SetOutput(nil)
+	defer log.SetOutput(os.Stderr)
 
 	parent := NewCheckEmptyNode()
 	parent.NextOn("yes", NewLoadNode())
@@ -85,7 +86,7 @@ func TestNext_ReturnsAppended_ForFluentChaining(t *testing.T) {
 func TestRunOnce_WarnsButRuns(t *testing.T) {
 	var buf bytes.Buffer
 	log.SetOutput(&buf)
-	defer log.SetOutput(nil)
+	defer log.SetOutput(os.Stderr)
 
 	parent := NewLoadNode()
 	parent.Next(NewCapsNode())

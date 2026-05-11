@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"log"
+	"os"
 	"strings"
 	"testing"
 )
@@ -93,7 +94,7 @@ func (m *mutatingNode) Post(shared SharedStore, prepRes, execRes any) string {
 func TestRunOnce_WarnsOnSuccessors(t *testing.T) {
 	var buf bytes.Buffer
 	log.SetOutput(&buf)
-	defer log.SetOutput(nil)
+	defer log.SetOutput(os.Stderr)
 
 	parent := NewAnswerNode()
 	child := NewAnswerNode()
