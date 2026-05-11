@@ -17,7 +17,7 @@ Every chapter ships with parallel docs:
 |---|---|---|---|
 | s01 | [minimum-node](agents/s01-minimum-node/) | `Node` interface, `BaseNode`, `RunOnce` — the prep/exec/post lifecycle | ✅ ready |
 | s02 | [node-chaining](agents/s02-node-chaining/) | `.Next()` / `.NextOn(action)` — building directed graphs (no runner yet) | ✅ ready |
-| s03 | flow-orchestrator | `Flow` walks the graph; `shared` vs `params` distinction | ⏳ coming |
+| s03 | [flow-orchestrator](agents/s03-flow-orchestrator/) | `Flow` walks the graph; `shared` vs `params` distinction | ✅ ready |
 | s04 | action-routing | branches + loop-back via action strings | ⏳ coming |
 | s05 | retry-fallback | `RetryNode` with `MaxRetries`, `Wait`, `ExecFallback` | ⏳ coming |
 | s06 | batch-node | `BatchNode` — map pattern with per-item retry | ⏳ coming |

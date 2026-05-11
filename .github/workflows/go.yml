@@ -22,6 +22,7 @@ jobs:
         session:
           - s01-minimum-node
           - s02-node-chaining
+          - s03-flow-orchestrator
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
