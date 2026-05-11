@@ -2,4 +2,5 @@ go 1.22
 
 use (
 	./agents/s01-minimum-node
+	./agents/s02-node-chaining
 )

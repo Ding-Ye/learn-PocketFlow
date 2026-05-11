@@ -21,6 +21,7 @@ jobs:
       matrix:
         session:
           - s01-minimum-node
+          - s02-node-chaining
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
