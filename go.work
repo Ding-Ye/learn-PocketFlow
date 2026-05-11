@@ -5,4 +5,5 @@ use (
 	./agents/s02-node-chaining
 	./agents/s03-flow-orchestrator
 	./agents/s04-action-routing
+	./agents/s05-retry-fallback
 )
