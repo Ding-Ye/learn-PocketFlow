@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>learn-PocketFlow — chapter index</title>
+<style>
+  :root { --fg: #1f2328; --muted: #57606a; --bg: #ffffff; --accent: #0969da; --card: #f6f8fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e6edf3; --muted: #8b949e; --bg: #0d1117; --accent: #58a6ff; --card: #161b22; }
+  }
+  * { box-sizing: border-box; }
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--fg); background: var(--bg); margin: 0; padding: 40px 24px; }
+  main { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 32px; }
+  .chapter { border: 1px solid var(--card); border-radius: 8px; padding: 16px 20px; margin: 12px 0; background: var(--card); }
+  .chapter h2 { font-size: 18px; margin: 0 0 6px; }
+  .chapter .tag { font-size: 12px; color: var(--muted); margin-right: 8px; }
+  .chapter a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  .chapter a:hover { text-decoration: underline; }
+  .status { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px; }
+  .status.ready { background: #1f883d; color: #fff; }
+  .status.coming { background: #6e7681; color: #fff; }
+  footer { color: var(--muted); margin-top: 40px; font-size: 14px; text-align: center; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>learn-PocketFlow</h1>
+  <p class="sub">Re-implementing <a href="https://github.com/The-Pocket/PocketFlow">PocketFlow</a> in Go, one mechanism per chapter. Pinned to upstream commit <code>43ef382</code>.</p>
+
+  <div class="chapter">
+    <h2>s01 · Minimum node loop <span class="status ready">ready</span></h2>
+    <span class="tag">Prep/Exec/Post lifecycle</span>
+    <p><a href="../docs/en/s01-minimum-node.md">English</a> · <a href="../docs/zh/s01-minimum-node.md">中文</a> · <a href="../agents/s01-minimum-node/">code</a></p>
+  </div>
+
+  <div class="chapter">
+    <h2>s02 · Node chaining + transitions <span class="status coming">coming</span></h2>
+    <span class="tag">Next() / NextOn()</span>
+  </div>
+  <div class="chapter">
+    <h2>s03 · The Flow orchestrator <span class="status coming">coming</span></h2>
+    <span class="tag">graph walking + shared/params</span>
+  </div>
+  <div class="chapter">
+    <h2>s04 · Action-based routing <span class="status coming">coming</span></h2>
+    <span class="tag">branches + loop-back</span>
+  </div>
+  <div class="chapter">
+    <h2>s05 · Retry &amp; fallback <span class="status coming">coming</span></h2>
+    <span class="tag">RetryNode + ExecFallback</span>
+  </div>
+  <div class="chapter">
+    <h2>s06 · BatchNode (map pattern) <span class="status coming">coming</span></h2>
+    <span class="tag">per-item retry</span>
+  </div>
+  <div class="chapter">
+    <h2>s07 · BatchFlow (param iteration) <span class="status coming">coming</span></h2>
+    <span class="tag">iterate params dicts</span>
+  </div>
+  <div class="chapter">
+    <h2>s08 · AsyncNode lifecycle <span class="status coming">coming</span></h2>
+    <span class="tag">context.Context + async lifecycle</span>
+  </div>
+  <div class="chapter">
+    <h2>s09 · AsyncFlow + parallel batch <span class="status coming">coming</span></h2>
+    <span class="tag">mixed sync/async + errgroup</span>
+  </div>
+  <div class="chapter">
+    <h2>s10 · RAG design pattern <span class="status coming">coming</span></h2>
+    <span class="tag">Provider + chunker + vector store</span>
+  </div>
+  <div class="chapter">
+    <h2>s_full · End-to-end integration <span class="status coming">coming</span></h2>
+  </div>
+  <div class="chapter">
+    <h2>Appendix A · Graph + prep/exec/post philosophy <span class="status coming">coming</span></h2>
+  </div>
+  <div class="chapter">
+    <h2>Appendix B · Upstream code reading map <span class="status coming">coming</span></h2>
+  </div>
+
+  <footer>
+    Made for self-paced learning. Upstream MIT-licensed by Zachary Huang.
+    Source: <a href="https://github.com/Ding-Ye/learn-PocketFlow">github.com/Ding-Ye/learn-PocketFlow</a>.
+  </footer>
+</main>
+</body>
+</html>

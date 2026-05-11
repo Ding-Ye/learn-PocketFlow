@@ -1,0 +1,11 @@
+.learn/
+*.test
+*.out
+.DS_Store
+node_modules/
+.idea/
+.vscode/
+dist/
+build/
+.env
+.env.local
