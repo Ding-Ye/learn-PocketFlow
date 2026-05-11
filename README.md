@@ -20,7 +20,7 @@ Every chapter ships with parallel docs:
 | s03 | [flow-orchestrator](agents/s03-flow-orchestrator/) | `Flow` walks the graph; `shared` vs `params` distinction | ✅ ready |
 | s04 | [action-routing](agents/s04-action-routing/) | branches + loop-back via action strings | ✅ ready |
 | s05 | [retry-fallback](agents/s05-retry-fallback/) | `RetryNode` with `MaxRetries`, `Wait`, `ExecFallback` | ✅ ready |
-| s06 | batch-node | `BatchNode` — map pattern with per-item retry | ⏳ coming |
+| s06 | [batch-node](agents/s06-batch-node/) | `BatchNode` — map pattern with per-item retry | ✅ ready |
 | s07 | batch-flow | `BatchFlow` — iterate parameter sets (orthogonal axis) | ⏳ coming |
 | s08 | async-node | `AsyncNode` + `context.Context` retry | ⏳ coming |
 | s09 | async-flow-parallel | `AsyncFlow` (mixed sync/async) + `AsyncParallelBatchNode` (errgroup) | ⏳ coming |

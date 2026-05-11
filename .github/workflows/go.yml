@@ -25,6 +25,7 @@ jobs:
           - s03-flow-orchestrator
           - s04-action-routing
           - s05-retry-fallback
+          - s06-batch-node
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5

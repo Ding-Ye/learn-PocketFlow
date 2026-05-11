@@ -6,4 +6,5 @@ use (
 	./agents/s03-flow-orchestrator
 	./agents/s04-action-routing
 	./agents/s05-retry-fallback
+	./agents/s06-batch-node
 )
