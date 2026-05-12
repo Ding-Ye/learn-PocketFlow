@@ -7,4 +7,5 @@ use (
 	./agents/s04-action-routing
 	./agents/s05-retry-fallback
 	./agents/s06-batch-node
+	./agents/s07-batch-flow
 )

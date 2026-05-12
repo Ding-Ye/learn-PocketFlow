@@ -21,7 +21,7 @@ Every chapter ships with parallel docs:
 | s04 | [action-routing](agents/s04-action-routing/) | branches + loop-back via action strings | ✅ ready |
 | s05 | [retry-fallback](agents/s05-retry-fallback/) | `RetryNode` with `MaxRetries`, `Wait`, `ExecFallback` | ✅ ready |
 | s06 | [batch-node](agents/s06-batch-node/) | `BatchNode` — map pattern with per-item retry | ✅ ready |
-| s07 | batch-flow | `BatchFlow` — iterate parameter sets (orthogonal axis) | ⏳ coming |
+| s07 | [batch-flow](agents/s07-batch-flow/) | `BatchFlow` — iterate parameter sets (orthogonal axis) | ✅ ready |
 | s08 | async-node | `AsyncNode` + `context.Context` retry | ⏳ coming |
 | s09 | async-flow-parallel | `AsyncFlow` (mixed sync/async) + `AsyncParallelBatchNode` (errgroup) | ⏳ coming |
 | s10 | rag-pattern | `Provider` interface + chunker + vector store + retrieval + answer | ⏳ coming |
